@@ -1,45 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Marianita 💖</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mi Regalo para Marianita</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes CSS separado -->
 </head>
 <body>
+    <!-- Aquí irá tu contenido -->
+    <header>
+        <h1>Bienvenida a tu página, Marianita</h1>
+    </header>
+
+    <!-- Agregar un carrusel de imágenes -->
+    <div id="carousel" class="carousel">
+        <img src="img1.jpg" alt="Imagen 1">
+        <img src="img2.jpg" alt="Imagen 2">
+        <img src="img3.jpg" alt="Imagen 3">
+    </div>
+
+    <!-- Aquí agregarías el fondo de burbujas y música si es necesario -->
     <audio autoplay loop>
-        <source src="music/te-quiero.mp3" type="audio/mpeg">
+        <source src="tu_musica.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de música.
     </audio>
 
-    <div class="frases-motivadoras" id="frase"></div>
-
-    <section class="carta">
-        <h1>Mi mar, mi chiquita preciosa, Marianita, el amor de mi vida</h1>
-        <p>Antes de que empieces a estudiar, respira hondo y recuerda que puedes con todo.  
-        Eres fuerte, eres capaz, y eres muchísimo más brillante de lo que tú misma te das cuenta.</p>
-        <p>Este examen no es más grande que tú; tú eres más grande que cualquier reto.  
-        Y si tú crees que no puedes, entonces cree en mí, que sí lo creo con todo mi corazón.</p>
-        <p>Por eso hice esto para ti (espero me salga bien 😔):  
-        un pequeño rincón virtual, un kit, una carta y algo más que se me ocurra, todo con amorcito,  
-        para que sientas mi abrazo aunque no esté contigo físicamente.</p>
-        <p>Yo te acompaño en cada hoja que leas, en cada ejercicio que resuelvas.  
-        Estoy contigo en pensamiento, en energía, en alma.  
-        Yo sé que tú puedes. Y no solo puedes: vas a lograrlo.</p>
-        <p>Te amo con todo lo que soy, y siempre voy a estar aquí, impulsándote hasta que el mundo vea lo que yo ya veo en ti.</p>
-    </section>
-
-    <section class="carrusel">
-        <div class="carrusel-contenedor">
-            <img src="images/foto1.jpg" class="foto-activa">
-            <img src="images/foto2.jpg">
-            <img src="images/foto3.jpg">
-            <img src="images/foto4.jpg">
-        </div>
-    </section>
-
-    <a href="https://drive.google.com/drive/folders/1Qv1GCFe1W_O-0qFt4QRitCW_m4GqtXfy?usp=sharing" class="boton-drive" target="_blank">✨ Ir a tu Kit de Examen ✨</a>
-
-    <script src="script.js"></script>
+    <button onclick="location.href='tu_enlace_de_google_drive'">Ver Regalo</button>
 </body>
 </html>
+Añadir música automática: La etiqueta <audio> que está en el ejemplo reproduce música en tu página automáticamente. Asegúrate de que el archivo de música (tu_musica.mp3) esté en la misma carpeta o en la ruta correcta.
+
+Carrusel de imágenes: Para el carrusel, puedes usar un código básico de imágenes como el que te puse arriba. Si deseas hacerlo más interactivo, puedes agregar algo de JavaScript o usar alguna librería de carrusel como Slick.
+
+Estilos (CSS): Crea un archivo CSS llamado styles.css en la misma carpeta que tu index.html. Dentro de ese archivo, puedes definir el estilo del fondo y de los elementos. Un ejemplo simple de estilos para el fondo de formas rosas y moradas podría ser:
+
+css
+Copiar
+Editar
+body {
+    background: linear-gradient(45deg, #f06, #a8d0e6);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #f06;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e05;
+}
