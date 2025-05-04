@@ -1,0 +1,86 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #f8c8dc, #e8c9f7, #ffffff);
+    overflow-x: hidden;
+    position: relative;
+}
+audio {
+    display: none;
+}
+.frases-motivadoras {
+    font-size: 1.5em;
+    color: #8c5e9f;
+    text-align: center;
+    margin: 30px 10px;
+    animation: fade 2s ease-in-out infinite alternate;
+}
+@keyframes fade {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+.carta {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #333;
+}
+.carta h1 {
+    color: #d673c1;
+}
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.carrusel-contenedor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.carrusel-contenedor img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.carrusel-contenedor img.foto-activa {
+    opacity: 1;
+}
+.boton-drive {
+    display: inline-block;
+    background-color: #ff99cc;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    margin: 40px auto;
+    display: block;
+    width: fit-content;
+}
+
+/* Burbujas suaves */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/mAa6glG.png') repeat;
+    opacity: 0.2;
+    z-index: -1;
+    animation: moverFondo 60s linear infinite;
+}
+@keyframes moverFondo {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 1000px; }
+}
